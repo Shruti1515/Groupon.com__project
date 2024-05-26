@@ -35,12 +35,13 @@ nav li p {
     margin-left: 18px;
     /* opacity: ; */
 }
-header{
+#header{
 position: absolute;
+justify-content: space-between;
 display: flex;
 margin: 40px auto 0px 80px;
-border: 1px solid red;
-/* gap: 500px; */
+/* border: 1px solid red; */
+gap: 720px;
 
 
 }
@@ -83,10 +84,13 @@ border: 1px solid red;
     margin-left: 10px;
     cursor: pointer;
 }
-#Sign_in{
-    gap: 500px;
-    
-}
+/* #Sign_in{
+    /* justify-content: space-around; */
+    /* border: 1px solid red;
+    display: flex; */
+     
+
+
 #Sign_in button{
     border: 1px solid white;
     border-radius: 5px;
@@ -111,24 +115,31 @@ border: 1px solid red;
     margin-left: 5px;
     cursor: pointer;
 }
+#Sign_in i{
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 100px;
+    margin: 0px 5px 0px 5px;
+}
 #chicago_box{
     position: absolute;
     text-align: center;
     margin-top: 100px;
     width: 100%;
-    border: 1px solid red;
+    
     
 }
-#chicago_box button{
-    font-size: 40px;
-    font-weight: 500;
-    padding: 0px 0px 0px -40px;
-    background-color: #230f33;
-    
+#chicago_box p{
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: center;
     color: #ffffff;
+    cursor: pointer;
     width: 100px;
     height: 35px;
-    cursor: pointer;
+
+    display: inline;
 }
 #chicago_box button:hover{
     text-decoration: underline;
@@ -142,6 +153,149 @@ border: 1px solid red;
     margin-left: 5px;
     cursor: pointer;
 }
+#search_bar{
+    border: 1px solid red;
+    /* width: 100px; */
+    margin: auto;
+}
+#skyBlue_Box{
+    background-color: #e8fcea;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 50px 0px 100px;
+}
+#skyBlue_Box p{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #006e52;
+    font-weight: bolder;
+    padding: 0px ;
+    width: 400px;
+    line-height: 20px;
+}
+#skyBlue_Box p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.left_border{
+    border-left: 1px solid #646060; 
+    margin-left: 0px;
+    padding-left: 70px;
+}
+
+#Hi_there{
+    margin: 0px 60px 0px 60px;
+}
+#hi {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
+
+}
+#trending{
+    font-weight: 100;
+    font-size: 26px;
+}
+
+#Hi_there_boxes{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.Hi_there_Image_box{
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.Hi_there_Image_box img{
+    
+    border-radius: 10px;
+}
+.Hi_there_Image_box h4{
+    font-weight: bolder;
+    margin-top: 5px;
+    font-size: 18px;
+}
+/* .Hi_there_Image_box p{
+    
+} */
+.rating{
+    /* border: 1px solid ; */
+    display: flex;
+    margin-top: -35px;
+}
+.stars{
+ position: relative;
+ left: 12%;
+ transform: translate(-50%, -50%);
+ font-size: 12px;
+ margin: 28px 10px 0px 0px ;
+}
+.fa {
+    color: orange;
+    font-size: 12px;
+    /* margin: -10px 0px 0px 5px ; */
+
+}
+#non_checked_star{
+    color: rgb(209, 203, 203);
+    /* font-size: 12px; */
+}
+.prices{
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+    gap: 7px;
+    /* border: 1px solid; */
+    line-height: 2px;
+    margin-top: -20px;
+}
+.price1{
+    color: #908c94;
+    font-weight: bold;
+}
+.price2{
+    color: #006e1b;
+    font-weight: bolder;
+}
+.price3{
+    color: #ff0000;
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.price3 span{
+   font-size: 20px;
+   font-weight: bolder;
+}
+.purpal_line{
+   font-size: 16px;
+   color: #5236ac;
+   margin-top: -5px;
+}
+.purpal_line span{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 2px;
+}
+.Hi_there_Image_box h5{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    color: #383737;
+    margin-top: -10px;
+}
+.Hi_there_Image_box h6{
+    color: #615c66;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: -6px;
+}
+
 
     </style>
 </head>
@@ -159,11 +313,12 @@ border: 1px solid red;
             <li>Sign up</li>
         </nav>
         <!-- header -->
-        <header>
+        <div id="header">
             <!-- Groupon logo left side -->
             <div id="logo">
                 <a href="#">GROUPON</a>
                 <Button>Categories <select> <option value=""></option></select></Button>
+            </div>
                 
             <!-- add to cart, notifications, sign in  -->
             <div id="Sign_in">
@@ -171,15 +326,98 @@ border: 1px solid red;
                 <a href="notification"> <i class="fa-regular fa-bell"></i></a>
                 <Button>Sign In <select> <option value=""></option></select></Button>
             </div>
-        </header>
+        </div >
 
         <div id="chicago_box">
-            <Button>Chicago <select> <option value=""></option></select></Button>
+            <p>Chicago</p>
+            <!-- <Button>Chicago <select> <option value=""></option></select></Button> -->
+            <select> <option value=""></option></select>
            <div id="search_bar"> <input type="search Groupon"></div>
 
         </div>
     </div>
-   
+
+   <div id="skyBlue_Box">
+    <p>Memorial day Tribute! up to 75% off Across over Top categories! USE CODE HEROES</p>
+    <p class="left_border" style="width: 350px; padding: 0px 5px 0px 10px ;" >Shine Bright, Feel Light! Summer ready: Fit & Fab Deals.</p>
+    <p class="left_border">Wine Day Celebrations: Sip & Savor</p>
+   </div>
+
+   <div id="Hi_there">
+    <h1><span id="hi">Hi there,</span> 
+        <span id="trending">here's what's trending today</span></h1>
+
+    <div id="Hi_there_boxes">
+
+
+        <div class="Hi_there_Image_box">
+            <img src="https://img.grouponcdn.com/deal/3DDprEuvgX4YwE5wJVaC6Ly2EXGr/3D-1440x880/v1/c349x211.webp" alt="">
+            <h4>$9 Tape Transfers: Packs of 10, 20, or 40 from - Legacy...</h4>
+            <div class="rating"> <p> 4.2  </p>
+                <div class="stars">
+                <span class="fa fa-star fa-3x checked "></span> 
+                <span class="fa fa-star fa-3x checked "></span>
+                <span class="fa fa-star fa-3x checked "></span>
+                <span class="fa fa-star fa-3x checked "></span>
+                <span class="fa fa-star fa-3x " id="non_checked_star"></span>   
+                </div>       
+                 <p>4545 ratings</p>
+          </div>
+
+          <div class="prices">
+            <p class="price1">$279.99</p>
+            <p class="price2">$89.99</p>
+            <p class="price3">From <span>$85</span> Limited Time </p>
+          </div>
+          <p class="purpal_line"> <span>$79.05</span>with code ACTFAST</p>
+          <h5>--Legacybox--</h5>
+          <h6>1820+ bought</h6>
+
+        </div>
+
+
+        <div class="Hi_there_Image_box">
+            <img src="https://img.grouponcdn.com/metro_draft_service/BK1kDzHK3C3k8VDxUGz7cJL9x7E/BK-700x420/v1/c349x211.webp" alt="">
+            <h4>Up to 91% Off Microsoft Office 2021 for Mac or Windows</h4>
+            <div class="rating"> <p> 4.1  </p>
+                <div class="stars">
+                <span class="fa fa-star fa-3x checked "></span> 
+                <span class="fa fa-star fa-3x checked "></span>
+                <span class="fa fa-star fa-3x checked "></span>
+                <span class="fa fa-star fa-3x checked "></span>
+                <span class="fa fa-star fa-3x " id="non_checked_star"></span>   
+                </div>       
+                 <p>8188 ratings</p>
+          </div>
+
+          <div class="prices">
+            <p class="price1">$249.99</p>
+            <p class="price2">$25</p>
+            <p class="price3">From <span>$23</span> Limited Time </p>
+          </div>
+          <p class="purpal_line"> <span>$21.39</span>with code ACTFAST</p>
+          <h5>Microsoft Office 2021 Professional Plus</h5>
+          <h6>82180+ bought</h6>
+
+        </div>
+
+        <div class="Hi_there_Image_box">
+            <img src="https://img.grouponcdn.com/deal/3KQRjuHa5VFPQyzwYKwtQT7gVJgi/3K-960x576/v1/c349x211.webp" alt="">
+            <h4>Speacial Offer - Up to 33% Off AMC Theaters Yellow Movie...</h4>
+          <div class="prices">
+            <p class="price1">$9</p>
+            <p class="price2">$5.99</p>
+            <p class="price3"> <span style="font-size: 12px; color: #006e1b; background-color: #ddf5e3; padding: 4px;">33% Off </span>  </p>
+          </div>
+          <h5>AMC Theaters</h5>
+          <h6>70+ bought</h6>
+
+        </div>
+
+
+        </div>
+
+    </div>
     
     
 </body>
