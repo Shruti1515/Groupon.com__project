@@ -7,4 +7,6 @@ done for today ..
 
 Made next page with product names and rating and prices as well
 
+- completed first page with half reamining footer
+
 
