@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: -10px 0px 0px -5px;
+            line-height: 40px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            position: fixed;
+        }
+        nav h1{
+            font-size: 35px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 15px 0px 0px 40px;
+            background-image: linear-gradient( to right, #028b23,#48e01c );
+            -webkit-background-clip: text;
+            color: transparent;
+            
+        }
+        h1 span{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: -1px;
+            font-family: 1000;
+        }
+        nav ul{
+            display: flex;
+            font-weight: 500;
+            gap: 30px;
+            list-style: none;
+            line-height: 40px;
+            color: #12ce3e;
+            font-size: 18px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+        nav li:hover{
+            text-decoration: underline;
+        }
+        nav button{
+            height: 38px;
+            width: 120px;
+            font-size: 13px;
+            background-color: #0d942c;
+            color: white;
+            border: 1px solid #12ce3e;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        #big_main_box{
+            position : absolute;
+            margin: 100px 140px 0px 140px;
+        }
+        /* #first_paragraph{
+            position : absolute;
+            margin: 100px 140px 0px 140px;
+
+        } */
+        #promote_your_business{
+            
+            font-size: 35px;
+            font-weight: bolder;
+        }
+        #reach_new_customers{
+            margin: -15px 0px 25px 0px;
+            font-weight: 400;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #input_box_image{
+            /* border: 1px solid; */
+            /* position :absolute;
+            margin: 290px 0px 0px 160px; */
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        #input_box{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            width: 450px;
+            /* border: 1px solid; */
+        }
+        #input_box input{
+            display: block;
+            font-size: 17px;
+            width: 400px;
+            height: 30px;
+            margin: 10px;
+            padding: 10px;
+            color: rgb(156, 151, 151);  
+        }
+
+        #input_box p{
+            margin: 0px 0px 0px 12px;
+            /* width: 390px; */
+            font-size: 13px;
+        }
+        #input_box button{
+            width: 400px;
+            height: 35px;
+            margin: 10px;
+            padding: 8px;
+            background-color: #53a318;
+            border: 1px #028b23;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+        }
+        #input_box span{
+            color: blue;
+            cursor: pointer;
+        }
+        #input_box_image img{
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        #image_with_para_box{
+            display: flex;
+            gap: 40px;
+            /* position: absolute;  */ 
+            margin: 120px 0px 0px 0px;; 
+        }
+        #image_with_para_box img{
+            border-radius: 13px;
+        }
+        .h2_with_para h2{
+            font-weight: bolder;
+            margin-top: 40px;
+        }
+        .h2_with_para p{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #whatsapp_image{
+            
+            margin: auto;
+            display: block;
+            justify-content: center;
+        }
+        #group_is_the_marketplace{
+            display: flex;
+            gap: 90px;
+        }
+        #Three_icon_box{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin-top: 30px;
+            
+        }
+        .icon_with_para{
+            display: flex;
+            padding: 20px;
+        }
+        .icon_with_para img{
+            margin: auto;
+        }
+        .icon_with_para h6{
+            margin: 10px 0px 0px 29px;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .icon_with_para p{
+            margin: 0px 0px 0px 29px;
+            font-size: 15px; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #working_with_group_merchant_box{
+            display: flex;
+            gap: 40px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        #working_with_group_merchant_box img{
+            border-radius: 10px;
+
+        }
+        #working_with_group_merchant_box button{
+            border: none;
+            color: blue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: transparent;
+            font-size: 15px;
+        }
+
+        #footer{
+            margin: 15px -150px 5px -150px;
+            background-color: #eaeaea;
+            padding: 30px;
+            display: flex;
+            justify-content: space-around;
+        }
+        #footer h1{
+            font-size: 28px;
+            width: 300px;
+            font-weight: 800;
+            letter-spacing: -2px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient( to right, #028b23,#48e01c );
+            -webkit-background-clip: text;
+            color: transparent;
+
+        }
+        #footer span{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: -1px;
+            font-family: 1000;
+        font-size: 40px;
+    }
+    #footer p{
+        font-size: 22px;
+    }
+    #footer input{
+        height: 30px;
+        width: 200px;
+        border-radius: 20px;
+        padding-left: 10px;
+        border: 1px solid grey;
+        margin-top: -5px;
+    }
+    #footer i {
+        font-size: 35px;
+        margin: 10px 0px 0px 30px;
+        cursor: pointer;
+        
+    }
+    #end_line{
+        margin: -10px -150px 2px -150px;
+            background-color: #eaeaea;
+            padding: 2px;
+
+    }
+    #end_line p{
+        text-align: left;
+        margin-left: 150px;
+    }
+    #end_line span{
+        cursor: pointer;
+    }
+    #end_line span:hover{
+        text-decoration: underline;
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>GROUPON <span>Merchant</span></h1>
+        <ul>
+            <li>By Industry</li>
+            <li>Tools</li>
+            <li>Resources</li>
+            <li>Login</li>
+        <button>Get Started</button>
+
+    </ul>
+  </nav>
+    
+<div id="big_main_box">
+
+  <div id="first_paragraph">
+  <h1 id="promote_your_business">Promote Your Business with Groupon Merchant</h1>
+  <h4 id="reach_new_customers">Reach New Customers. Build Loyalty. Become a True Destination.</h4>
+  <p>Get Started Today with $0 Upfront Cost!</p>
+
+ </div>
+
+
+  <div id="input_box_image">
+     
+   <div id="input_box">
+    <input type="text" placeholder="Business name">
+    <input type="text" placeholder="Business Address">
+    <input type="text" placeholder="First & Last name">
+    <input type="mail" placeholder="Email Address">
+    <input type="number" placeholder="Phone Number">
+    <p>By clicking below, I agree to the <span>Terms of Use</span> and that I have read the <span>Privacy Statement</span>. </p>
+    <button>Sign Up</button>
+   </div>
+
+
+   <img src="https://img.grouponcdn.com/seocms/FTDTHPTVnZy9z8VEMY3TvaZzBPB/foodtruck-woman-smile_1__jpg-900x600" alt="" width="516px" height="324px">
+
+ </div>
+
+  <div id="image_with_para_box">
+    <img src="https://img.grouponcdn.com/seocms/28pa1Usro2AuKgemHwnicvXHUa3S/woman-laptop-1024x684-1_1__jpg-1024x684" alt="" width="516" height="325">
+
+    <div class="h2_with_para">
+        <h2>An Unmatched Way To Attract New Customers And Build Brand Loyalty</h2>
+        <p>You have something unique to offer, and you need to reach the people who want to experience it. With Groupon Merchant, you can. We have one of the largest platforms in the world, and a tech-forward approach to getting your offer to the right people. Everyday excellence. Extraordinary experiences. No matter the need, you make it happen. We help you find visitors, and you give them something to remember.</p>
+    </div>
+  </div>
+
+  <img id="whatsapp_image" src="./Image .jpeg" alt="">
+
+
+  <div id="group_is_the_marketplace">
+
+     <div class="h2_with_para" 
+     style="width: 700px; margin-top: 50px;">
+        <h2>Groupon Is The Marketplace For Local Experiences</h2>
+        <p>Groupon is more than a place to shop for deals. It's where customers around the world explore where to go, what to do, or what to buy today. Here's how Groupon Merchant helps promote your business.</p>
+     </div>
+
+     <div id="Three_icon_box">
+
+        <div class="icon_with_para">
+        <img src="https://img.grouponcdn.com/seocms/kySc5eESBz6grNEkCgAotAXWnZw/customers-new1_png-208x209/v1/q90.jpg" alt="" height="59" width="59">
+        <div>
+             <h6>Find New Audiences</h6>
+            <p>We invest millions in marketing campaigns across web and mobile to bring customers to the Groupon platform.</p>
+    </div>
+
+       </div>
+         
+        <hr>
+
+        <div class="icon_with_para">
+            <img src="https://img.grouponcdn.com/seocms/kySc5eESBz6grNEkCgAotAXWnZw/customers-new1_png-208x209/v1/q90.jpg" alt="" height="59" width="59">
+            <div>
+                 <h6>Boost Brand Loyalty</h6>
+                <p>Groupon is an all-in-one marketing solution with no upfront cost that helps your business to build brand recognition.</p>
+        </div>
+    
+        </div>
+
+        <hr>
+
+        <div class="icon_with_para">
+            <img src="https://img.grouponcdn.com/seocms/kySc5eESBz6grNEkCgAotAXWnZw/customers-new1_png-208x209/v1/q90.jpg" alt="" height="59" width="59">
+            <div>
+                 <h6>Become the Destination of Choice</h6>
+                <p>People are always looking for their new favorite thing to do. We’ll use our tools to help them find you</p>
+        </div>
+    
+        </div>
+    
+     </div>
+    
+  </div>
+
+  <div id="working_with_group_merchant_box">
+
+    <img src="https://img.grouponcdn.com/seocms/h79k56cc8kzWq7mBUwNxW1hreN5/business-owner-man-woman_1__jpg-900x600" alt="" height="325px" width="488px">
+
+    <div  class="h2_with_para">
+        <h2>Working With Groupon Merchant</h2>
+        <p>Ok, but what's it actually like to work with Groupon Merchant? Learn more about the experience of becoming, well, an experience.</p>
+        <button>Learn more</button>
+    </div>
+
+  </div>
+
+  <div id="footer">
+    <div> <h1>GROUPON <span>Merchant</span></h1>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+
+    </div>
+
+    <div>
+        <p>Subscribe for Updates</p>
+        <input type="text" placeholder="Email">
+    </div>
+
+  </div>
+   <div id="end_line">
+  <hr>
+  <p>© 2022 - 2024 Groupon, Inc. All Rights Reserved. GROUPON is a registered trademark of Groupon, Inc. &nbsp; &nbsp; &nbsp; &nbsp;<span>Terms of Use</span> &nbsp; &nbsp; &nbsp; &nbsp;<span>Privacy Policy</span></p>
+  
+</div>
+  
+
+
+
+
+
+</div>
+
+</body>
+</html>

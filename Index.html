@@ -26,6 +26,12 @@ nav{
     cursor: pointer;
     
 }
+nav a{
+    color: white;
+    border: 1px red;
+    text-decoration: none;
+    
+}
 nav li:hover{
     text-decoration: underline;
     
@@ -154,9 +160,13 @@ gap: 720px;
     cursor: pointer;
 }
 #search_bar{
-    border: 1px solid red;
-    /* width: 100px; */
-    margin: auto;
+    width: 50%;
+    border-radius: 30px;
+    margin-top: 20px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    
 }
 #skyBlue_Box{
     background-color: #e8fcea;
@@ -454,8 +464,8 @@ gap: 720px;
     border-radius: 8px;
     width: 250px;
     padding: 10px;
-    margin: auto;
-    margin-top: 50px;
+    margin-left: 40%;
+    margin-bottom: 30px;
 }
 #pink_box_button:hover{
     cursor: pointer;
@@ -545,20 +555,112 @@ gap: 720px;
     color: black;
 }
 
-.box2{
-            background-color: #230f33;
-            grid-area: b;
-            /* height:90vh; */
-            display: flex;
-            color: white;
-            justify-content:space-around;
+#footer_blue_box{
+    background-color: #230f33;
+    /* height:90vh; */
+    display: flex;
+    color: white;
+    justify-content:space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
         
-        }
+}
+.footer_box_head:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
     
-        .box_head{
-            font-size: 30px;
-            margin-top: 50px;
+.footer_box_head{
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
+#help_center_button{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 75px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 800;
+}
+#help_center_button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#end_footer_part{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 60px 0px 60px ;
+}
+#facebook_insta_logo{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    
+}
+#facebook_insta_logo i{
+    cursor: pointer;
+    font-size: 30px;
+    margin: 10px;
+}
+
+#groupon_sites button {
+    border: 1px solid rgb(179, 172, 172);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 0px 0px 0px -40px;
+    background-color: transparent;
+    color: #463f3f;
+    width: 180px;
+    height: 35px;
+    cursor: pointer;
+}
+#groupon_sites select{
+    background-color: transparent;
+    color: #463f3f;
+    border: none;
+    margin-left: 100px;
+    cursor: pointer;
+}
+#groupon_sites{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+#scan_for_app{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+#sign_up_for_deals{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+#sign_up_for_deals button{
+    font-size: 15px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+#sign_up_for_deals button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+#last_line{
+    margin: 80px 50px 20px 50px;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(92, 88, 88);
+    word-spacing: 1px;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -573,7 +675,7 @@ gap: 720px;
              <p>Get The Groupon App</p></li>
             <li> <i class="fa-regular fa-heart"></i>
            <p>My Wishlist</p></li>
-            <li>Sell On Groupon</li>
+            <li> <a href="./GrouponMerchant.html" target="_blank"> Sell On Groupon </a></li>
             <li>Help</li>
             <li>Sign up</li>
         </nav>
@@ -597,7 +699,7 @@ gap: 720px;
             <p>Chicago</p>
             <!-- <Button>Chicago <select> <option value=""></option></select></Button> -->
             <select> <option value=""></option></select>
-           <div id="search_bar"> <input type="search Groupon"></div>
+           <div> <input id="search_bar" type="text" placeholder="Search Groupon"></div>
 
         </div>
     </div>
@@ -791,7 +893,7 @@ gap: 720px;
 
   </div >
 
-      <p id="pink_box_button">Show all</p>
+      <button id="pink_box_button">Show all</button>
 
   </div>
 
@@ -1119,107 +1221,102 @@ gap: 720px;
         <button class="mega_memorial_button" id="Next_button"> Next  &nbsp;> </button>
     </div>
 
-    <p id="popular_line_on_footer"><span>Popular on Groupon + </span> Groupon on your place for saving and discovery while exploring fun activities in your city and around the country. Click here for popular categories </p>
+    <p id="popular_line_on_footer">
+        <span>Popular on Groupon + </span> Groupon on your place for saving and discovery while exploring fun activities in your city and around the country. Click here for popular categories </p>
 
 
 
-    <div class="box2"> 
+    <div id="footer_blue_box"> 
            
-        <div class="list">
-          <h1 class="box_head">Customer Support</h1>
-           <p>Help Center</p>
+        <div id="Customer_support_right_border">
+          <h1 class="footer_box_head">Customer Support</h1>
+           <p id="help_center_button">Help Center</p>
            <p>Refund Policies</p>
            <p>Merchant Class Action Settlement </p>
            
        
         </div>
 
+
        <div class="list">
-           <h1 class="box_head">Sell on Groupon</h1>
-               <p>join Groupon's Marketplace</p>
+           <h1 class="footer_box_head">Sell on Groupon</h1>
+               <p>Join Groupon's Marketplace</p>
                <p>Run a Groupon campaign</p>
                <p>How Groupon Works For Merchant</p>
                <p>Advertise Your campaign</p>
                <p>Affiliates Program</p>
                <p>Vendor Code of Cunduct</p>
 
-
-
-          
        </div>
 
        <div class="list">
-               <h1 class="box_head">About</h1>
-                <p>etsy.inc</p>
-                <p>Popcies</p>
-                <p>Ivestores</p>
-                <p>careers</p>
+               <h1 class="footer_box_head">Company</h1>
+                <p>About </p>
+                <p>Jobes</p>
                 <p>Press</p>
-                <p>Impact</p>
-                <p>Local Imprint</p>
+                <p>Invester Relations</p>
+                <p>Managment Team</p>
+                
        
    </div>
        <div class="list">
-           <h1 class="box_head">Shop</h1>
-               <p>Gift cards</p>
-               <p>Etsy Registry</p>
-               <p>sitemaps</p>
-               <p>Etsy United Kingdom</p>
-               <p>Etsy germany</p>
-               <p>Etsy canada</p>
+           <h1 class="footer_box_head">Quick Links</h1>
+               <p>Treat Yourself +</p>
+               <p>Things to do +</p>
+               <p>coupons +</p>
+               <p>Gifts for occasion + </p>
+               
        </div>
    
 
 
-   <!-- <div id="select">
-       <select>
-         <option>Shop</option>
-         <option>Gift Card</option>
-         <option>Etsy Registry</option>
-         <option>Sitemap</option>
-         <option>Etsy blog</option>
-         <option>Etsy United Kingdom</option>
-         <option>Etsy Germany</option>
-         <option>Etsy Canada</option>
-       </select>
    
-       <select>
-         <option>Sell</option>
-         <option>Sell on Etsy</option>
-         <option>Terms</option>
-         <option>Forums</option>
-         <option>Affiliates & Creators</option>
-       </select>
-   
-       <select>
-         <option>About</option>
-         <option>Etsy, Inc.</option>
-         <option>Policies</option>
-         <option>Investors</option>
-         <option>Careers</option>
-         <option>Press</option>
-         <option>Impact</option>
-         <option>Legal imprint</option>
-       </select>
-   
-       <select>
-         <option>Shop</option>
-         <option>Gift Cards</option>
-         <option>Etsy Registry</option>
-         <option>Sitemap</option>
-         <option>Etsy blog</option>
-         <option>Etsy United Kingdom</option>
-         <option>Etsy Germany</option>
-         <option>Etsy Canada</option>
-       </select>
-   
-   <div id="items">
-       <p>Help Centre</p>
-       
-       <p>Privacy Setting </p>
-     </div>
-     </div> -->
    </div>
+
+
+   <div id="end_footer_part">
+      <div id="facebook_insta_logo">
+        <p>Follow Us</p>
+        
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+    
+      </div>
+
+      <div id="groupon_sites">
+        <p>Groupon Sites</p>
+        <Button>USA <select> <option value="UAE"></option></select></Button>
+        
+      </div>
+
+      <div id="scan_for_app">
+        <p>Scan For The Groupon app</p>
+        <img src="https://img.grouponcdn.com/sls/3pA72nHCtnUsjckH8KU4GvEKzzt/3p-83x82" alt="app Scanner">
+
+      </div>
+
+      <div id="sign_up_for_deals">
+        <p>Sign up For Latest Deals</p>
+        <button>Sign up</button>
+      </div>
+
+   </div>
+
+   <p id="last_line">© 2024 Groupon, Inc. All Rights Reserved.
+    Terms of Use
+    |
+    Privacy Policy
+    |
+    Interest-Based Ads
+    |
+    Licenses
+    |
+    Accessibility
+    |
+    Do Not Sell or Share My Personal InformationDo Not Sell or Share My Personal Information
+    |
+    Sitemap</p>
 
 
 
