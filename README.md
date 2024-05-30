@@ -10,11 +10,18 @@ Made next page with product names and rating and prices as well
 completed first page with half reamining footer
 First page is complete
 
-add sell on groupon page 
+
+add sell on groupon page
+![alt text](<WhatsApp Image 2024-05-30 at 10.13.03 PM.jpeg>)
+
 
 add to cart pages added
+![alt text](<WhatsApp Image 2024-05-30 at 10.13.02 PM.jpeg>)
+
 
 product page added.
+![alt text](<WhatsApp Image 2024-05-30 at 10.13.02 PM (1).jpeg>)
+
 
 
 
